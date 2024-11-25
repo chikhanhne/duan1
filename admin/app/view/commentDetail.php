@@ -13,24 +13,23 @@
                         </div>
                     </div>
                     <!-- xong phần header -->
-                    <?php foreach ($data['listcmtdetail'] as $item) {
-                                    extract($item) ?>
                     <div class="main-product">
+                    <?php extract($data['cmtct']); ?>
+                
                         <div class="category-main-product">
                             <label for="Tên danh mục">Tên khách hàng</label>
-                            <input type="text">
+                            <input type="text" value="">
                         </div>
                         <div class="category-main-product">
                             <label for="">Ngày bình luận</label>
-                            <input type="date">
+                            <input type="date" value="<?= $dateProComment ?>">
                         </div>
                         <div class="text-main-product">
                             <label for="">Nội dung</label>
                             <!-- <input type="text"> -->
-                            <textarea name="" id="" cols="50" rows="5"></textarea>
+                            <textarea name="" id="" cols="50" rows="5" ><?php echo $text;?></textarea>
                         </div>
                     </div>
-                    <?php } ?>
 
                 </div>
             </div>

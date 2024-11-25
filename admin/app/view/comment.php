@@ -39,7 +39,7 @@
                                     <td><?= $text ?></td>
                                     <td><?= $idProduct ?></td>
                                     <td><?= $dateProComment ?></td>
-                                    <td><a href="?page=commentDetail">Xem</a></td>
+                                    <td><a href="?page=commentDetail&id=<?= $id ?>">Xem</a></td>
                                 </tr>
                                 <?php } ?>
                                 <!-- 1 box -->

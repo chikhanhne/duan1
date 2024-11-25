@@ -29,21 +29,18 @@
                             </thead>
                             <tbody>
                                 <!-- 1 box -->
-                                 <?php foreach ($data['listordDetail'] as $item){
-                                    extract($item)
-                                  ?>
+                                <?php extract($data['ordct']); ?>
                                 <tr>
                                     <td><input type="checkbox"></td>
                                     <td><?= $id ?></td>
-                                    <td><img src="../image/imgdemo.jpg" alt="" width="100px" height="100px"></td>
+                                    <td><img src="public/image/<?= $image ?>" alt="" width="100px" height="100px"></td>
                                     <td><?= $idProduct ?></td>
                                     <td><?= $priceItem ?></td>
                                     <td><?= $quantity ?></td>
                                     <!-- <td>
                                         <textarea name="" id="" cols="20" rows="5"></textarea>
                                     </td> -->
-                                </tr>
-                                <?php } ?>
+                                </tr>                           
                                 <!-- 1 box -->
                                 <!-- <tr>
                                     <td><input type="checkbox"></td>

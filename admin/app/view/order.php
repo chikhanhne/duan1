@@ -46,7 +46,7 @@
                                     <td><?= $dateOrder ?></td>
                                     <td><?= $noteUser ?></td>
                                     <td><span class="status success">Đã giao hàng</span></td>
-                                    <td><a href="?page=orderDetail">Xem</a></td>
+                                    <td><a href="?page=orderDetail&id=<?= $id ?>">Xem</a></td>
                                 </tr>
                                 <?php } ?>
                                 <!-- 1 box -->
